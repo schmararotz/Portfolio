@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(38, 49, 63);
+}
+
+/* ---------Header-------- */
+header {
+    z-index: 100;
+    position : fixed;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(27, 38, 52);
+    text-align: center;
+    font-size: 20px;
+    height: 48px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav button {
+    margin-left: 20px;
+    background-color: rgb(27, 38, 52);
+    border: none;
+    cursor: pointer;
+}
+header .nav img {
+    width: 40px;
+    height: 40px;
+}
+header .nav .logo {
+    margin-left: 10px;
+    width: 120px;
+}
+
+
+header .settings img {
+    width: 40px;
+    height: 40px;
+}
+header .settings button {
+    margin-right: 20px;
+    background-color: rgb(27, 38, 52);
+    border: none;
+    cursor: pointer;
+}
+/* ---------End-Header-------- */
+
+/* ---------Menu-------- */
+#menu {
+    display: none;
+    position: absolute;
+    border-radius: 10px 0px 0px 10px;
+    top: 58px;
+    right: 0px;
+    width: 500px;
+    height: 700px;
+    background: rgb(27, 38, 52);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#menu.visible {
+      display: block;
+}
+.menuContent {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menuContent .search input {
+    background-color: rgb(38, 49, 63);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    width: 250px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid rgb(58, 59, 61);
+}
+.menuContent .search input:focus {
+    outline: none;
+    border: 1px solid rgb(103, 105, 109);
+}
+.menuContent ul {
+    list-style: none;
+}
+.menuContent ul li {
+    margin: 10px;
+}
+.menuContent ul li a {
+    text-decoration: none;
+    color: white;
+}
+/* ---------End-Menu-------- */
+
+/* ---------Profile-Menu-------- */
+#profileMenu {
+    color: white;
+    display: none;
+    position: fixed;
+    border-radius: 10px 0px 0px 10px;
+    top: 58px;
+    right: 0px;
+    width: 500px;
+    height: 560px;
+    background: rgb(27, 38, 52);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#profileMenu.visible {
+      display: block;
+}
+.profileContentOne {
+    margin: 10px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.profileContentOne img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.profileContentOne h3 {
+    font-size: 20px;
+}
+.profileContentOne h4 {
+    font-size: 16px;
+}
+.profileContentTwo {
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.profileContentTwo h3 {
+    font-size: 20px;
+}
+.profileContentTwo p {
+    font-size: 16px;
+}
+/* ---------End-Profile-Menu-------- */
+
+/* ---------Languages-------- */
+.sprachen {
+    margin-top: 70px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.sprache {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    border-radius: 50px;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.sprache img {
+    height: 40px;
+    width: 40px;
+}
+.sprache h3 {
+    font-size: 17px;
+}
+/* ---------End-Languages-------- */
+
+/* ---------Jobs-------- */
+.jobsCard {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.jobs {
+    background-color: rgb(27, 38, 52);
+    padding: 20px;
+    width: auto;
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    border-radius: 10px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.jobs a {
+    text-decoration: underline;
+    text-decoration-color: rgb(146, 170, 255);
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+.jobs button {
+    background-color: rgb(38, 49, 63);
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.jobs button:hover {
+    background-color: rgb(58, 59, 61);
+}
+.jobsPosition {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+.jobsTime {
+    color: white;
+    font-size: 15px;
+}
